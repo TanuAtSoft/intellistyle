@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -34,5 +34,110 @@
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+#intelistyle-outfits {
+  /* max-width: 1024px; */
+}
+.intellistyle{
+  /* max-width: 1024px; */
+  margin: auto;
+  align-items: center;
+  /* width: 70%; */
+  text-align: center;
+}
+.outerContainer {
+  max-width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  min-width: 387px;
+  line-height: 0.5;
+  background-color: #f8f8f8;
+  padding: 50px;
+  font-size: 12px;
+  height: fit-content;
+  line-height: 0.2;
+  min-height: 500px;
+}
+.container img:hover {
+  transform: scale(1.1);
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+.main-products-wrap {
+  max-height: fit-content;
+  max-width: fit-content;
+  position: relative;
+}
+.main-img {
+  max-width: 210px;
+  height: auto;
+  position: relative;
+}
+.topRight {
+  position: absolute;
+  bottom: 62%;
+  left: 56%;
+  text-align: end;
+}
+.topRight img {
+  max-width: 130px;
+  height: auto;
+  max-height: 160px;
+}
+.bottomLeft {
+  position: absolute;
+  bottom: 6%;
+  right: 75%;
+}
+.bottomLeft img {
+  max-width: 100px;
+  height: auto;
+}
+.footwearDiv {
+  position: absolute;
+  bottom: -3%;
+  left: 72%;
+}
+.footwearDiv img {
+  max-width: 100px;
+  height: auto;
+}
+.topLeft {
+  position: absolute;
+  bottom: 62%;
+  right: 68%;
+  text-align: initial;
+}
+.topLeft img {
+  max-width: 170px;
+  height: auto;
+  max-height: 150px;
+}
+.moodboard-price {
+  font-weight: bold;
+}
+s.cross-text {
+  color: red;
+}
+.outerContainer button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    margin: 1%;
   }
 }

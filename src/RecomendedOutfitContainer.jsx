@@ -154,10 +154,11 @@ const RecomendedOutfitContainer = ({ completeOutlook }) => {
       setOnBottomLeft(onBottomLeftProduct);
       setOnTopRight(onTopRightProduct);
     }
-  }, [completeTheLookArr]);
+  }, [completeTheLookArr, footwearBottomRight]);
+  
   return (
     <div className="container">
-      {mainProduct && (
+      {mainProduct && mainProduct.length >0 && (
         <div className="main-products-wrap">
           <img
             className="main-img"
@@ -203,7 +204,7 @@ const RecomendedOutfitContainer = ({ completeOutlook }) => {
           )}
           <p className="brand">{mainProduct[0].remote_brand}</p>
 
-          {onTopLeft && (
+          {onTopLeft && onTopLeft.length> 0 &&(
             <div className="topLeft">
               <img
                 src={onTopLeft[0]?.garment_images[0]?.s3_url_removed_bg}
@@ -258,7 +259,7 @@ const RecomendedOutfitContainer = ({ completeOutlook }) => {
               <p className="brand">{onTopLeft[0]?.remote_brand}</p>
             </div>
           )}
-          {onTopRight && (
+          {onTopRight && onTopRight.length>0 && (
             <div className="topRight">
               <img
                 src={onTopRight[0]?.garment_images[0]?.s3_url_removed_bg}
@@ -311,7 +312,7 @@ const RecomendedOutfitContainer = ({ completeOutlook }) => {
               <p className="brand">{onTopRight[0]?.remote_brand}</p>
             </div>
           )}
-          {onBottomLeft && (
+          {onBottomLeft && onBottomLeft.length > 0 &&(
             <div className="bottomLeft">
               <img
                 src={onBottomLeft[0]?.garment_images[0]?.s3_url_removed_bg}
@@ -371,7 +372,7 @@ const RecomendedOutfitContainer = ({ completeOutlook }) => {
               <p className="brand">{onBottomLeft[0]?.remote_brand}</p>
             </div>
           )}
-          {footwearBottomRight && (
+          {footwearBottomRight && footwearBottomRight.length>0 && (
             <div className="footwearDiv">
               <img
                 src={

@@ -2,8 +2,6 @@
 /* eslint-disable eqeqeq */
 import React, { useState, useEffect, Fragment } from "react";
 import "./App.css";
-import formatPrice from "./formatPrice";
-import SingleOutfitContainer from "./SingleOutfitContainer";
 import { dressData } from "./dummyData";
 import RecomendedOutfitContainer from "./RecomendedOutfitContainer";
 import { useMediaQuery } from "react-responsive";

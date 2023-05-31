@@ -36,9 +36,6 @@
     transform: rotate(360deg);
   }
 } */
-#intelistyle-outfits {
-  /* max-width: 1024px; */
-}
 .intellistyle{
   /* max-width: 1024px; */
   margin: auto;
@@ -62,11 +59,10 @@
   min-width: 387px;
   line-height: 0.5;
   background-color: #f8f8f8;
-  padding: 50px;
   font-size: 12px;
-  height: fit-content;
   line-height: 0.2;
-  min-height: 500px;
+  min-height: 470px;
+  padding-top: 65px;
 }
 .container img:hover {
   transform: scale(1.1);
@@ -79,25 +75,27 @@
   position: relative;
 }
 .main-img {
-  max-width: 210px;
+  max-width: 175px;
   height: auto;
   position: relative;
+  max-height: 230px;
+  min-height: 230px;
 }
 .topRight {
   position: absolute;
-  bottom: 62%;
-  left: 56%;
+  bottom: 67%;
+  left: 63%;
   text-align: end;
 }
 .topRight img {
-  max-width: 130px;
+  max-width: 110px;
   height: auto;
-  max-height: 160px;
+  max-height: 150px;
 }
 .bottomLeft {
   position: absolute;
-  bottom: 6%;
-  right: 75%;
+  bottom: 15%;
+  right: 90%;
 }
 .bottomLeft img {
   max-width: 100px;
@@ -105,8 +103,8 @@
 }
 .footwearDiv {
   position: absolute;
-  bottom: -3%;
-  left: 72%;
+  bottom: 0%;
+  left: 75%;
 }
 .footwearDiv img {
   max-width: 100px;
@@ -114,17 +112,18 @@
 }
 .topLeft {
   position: absolute;
-  bottom: 62%;
-  right: 68%;
+  bottom: 67%;
+  right: 83%;
   text-align: initial;
 }
 .topLeft img {
-  max-width: 170px;
+  max-width: 110px;
   height: auto;
   max-height: 150px;
 }
 .moodboard-price {
   font-weight: bold;
+  padding-top: 10px;
 }
 s.cross-text {
   color: red;
@@ -139,5 +138,10 @@ s.cross-text {
 @media screen and (min-width: 1024px) {
   .container {
     margin: 1%;
+  }
+}
+@media screen and (max-width: 641px) {
+  .container {
+  min-width: 320px;
   }
 }

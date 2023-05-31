@@ -4,6 +4,25 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// export function createDivWithIdBeforeNode(divId, DOMNode) {
+//   const element = document.createElement('div')
+//   element.id = divId
+//   DOMNode.parentNode.insertBefore(element, DOMNode);
+
+//   return element;
+// }
+
+// let moreFromBrandGarments = document.getElementById(
+//   "test-div"
+// );
+// if (moreFromBrandGarments) {
+//   let outfitFollowingElement = moreFromBrandGarments;
+//   const outfitRootEl = createDivWithIdBeforeNode(
+//     "intelistyle-outfit",
+//     outfitFollowingElement
+//   );
+// }
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
